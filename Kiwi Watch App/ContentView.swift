@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Shared
+//  Kiwi Watch App
 //
-//  Created by Andrew Li on 19/8/2022.
+//  Created by Andrew Li on 20/8/2022.
 //
 
 import SwiftUI

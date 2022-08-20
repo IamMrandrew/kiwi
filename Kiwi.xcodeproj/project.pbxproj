@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CA28AFF0D90059E434 /* KiwiApp.swift */; };
+		493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CC28AFF0D90059E434 /* ContentView.swift */; };
+		493BC5CF28AFF0DA0059E434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493BC5CE28AFF0DA0059E434 /* Assets.xcassets */; };
+		493BC5D228AFF0DA0059E434 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493BC5D128AFF0DA0059E434 /* Preview Assets.xcassets */; };
+		493BC5D528AFF0DA0059E434 /* Kiwi Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B631EB28AFCB2700E14DFE /* Persistence.swift */; };
+		494B39E328AFF23F00E489E6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494B39E228AFF23F00E489E6 /* CloudKit.framework */; };
+		494B39E628AFF25800E489E6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494B39E528AFF25800E489E6 /* CloudKit.framework */; };
+		494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FA28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FB28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FC28AFCB2A00E14DFE /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E928AFCB2700E14DFE /* KiwiApp.swift */; };
@@ -18,9 +27,45 @@
 		49B6320228AFCB2A00E14DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B631EC28AFCB2A00E14DFE /* Assets.xcassets */; };
 		49B6320328AFCB2A00E14DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B631EC28AFCB2A00E14DFE /* Assets.xcassets */; };
 		49B6320F28AFD51B00E14DFE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B6320E28AFD51B00E14DFE /* CloudKit.framework */; };
+		49E194B428B11F4700EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B328B11F4700EE949D /* ContentViewModel.swift */; };
+		49E194B528B11F4700EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B328B11F4700EE949D /* ContentViewModel.swift */; };
+		49E194B728B11F6C00EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B628B11F6C00EE949D /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		493BC5D328AFF0DA0059E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B631E228AFCB2700E14DFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493BC5C728AFF0D90059E434;
+			remoteInfo = "Kiwi Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		493BC5D628AFF0DA0059E434 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				493BC5D528AFF0DA0059E434 /* Kiwi Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kiwi Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		493BC5CA28AFF0D90059E434 /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
+		493BC5CC28AFF0D90059E434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		493BC5CE28AFF0DA0059E434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		493BC5D128AFF0DA0059E434 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		494B39E228AFF23F00E489E6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		494B39E428AFF25500E489E6 /* Kiwi Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kiwi Watch App.entitlements"; sourceTree = "<group>"; };
+		494B39E528AFF25800E489E6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kiwi-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49B631E828AFCB2700E14DFE /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		49B631E928AFCB2700E14DFE /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
 		49B631EA28AFCB2700E14DFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,9 +77,19 @@
 		49B6320C28AFD50C00E14DFE /* Kiwi (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kiwi (iOS).entitlements"; sourceTree = "<group>"; };
 		49B6320E28AFD51B00E14DFE /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		49B6321028AFD56100E14DFE /* Kiwi--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kiwi--iOS--Info.plist"; sourceTree = "<group>"; };
+		49E194B328B11F4700EE949D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		49E194B628B11F6C00EE949D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		493BC5C528AFF0D90059E434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494B39E628AFF25800E489E6 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B631EE28AFCB2A00E14DFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,12 +102,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494B39E328AFF23F00E489E6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493BC5C928AFF0D90059E434 /* Kiwi Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */,
+				494B39E428AFF25500E489E6 /* Kiwi Watch App.entitlements */,
+				493BC5CA28AFF0D90059E434 /* KiwiApp.swift */,
+				493BC5CC28AFF0D90059E434 /* ContentView.swift */,
+				493BC5CE28AFF0DA0059E434 /* Assets.xcassets */,
+				493BC5D028AFF0DA0059E434 /* Preview Content */,
+				49E194B628B11F6C00EE949D /* ContentViewModel.swift */,
+			);
+			path = "Kiwi Watch App";
+			sourceTree = "<group>";
+		};
+		493BC5D028AFF0DA0059E434 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				493BC5D128AFF0DA0059E434 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		49B631E128AFCB2700E14DFE = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +138,7 @@
 				49B6320C28AFD50C00E14DFE /* Kiwi (iOS).entitlements */,
 				49B631E628AFCB2700E14DFE /* Shared */,
 				49B631F828AFCB2A00E14DFE /* macOS */,
+				493BC5C928AFF0D90059E434 /* Kiwi Watch App */,
 				49B631F228AFCB2A00E14DFE /* Products */,
 				49B6320D28AFD51B00E14DFE /* Frameworks */,
 			);
@@ -73,6 +152,7 @@
 				49B631EB28AFCB2700E14DFE /* Persistence.swift */,
 				49B631EC28AFCB2A00E14DFE /* Assets.xcassets */,
 				49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */,
+				49E194B328B11F4700EE949D /* ContentViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -82,6 +162,7 @@
 			children = (
 				49B631F128AFCB2A00E14DFE /* Kiwi.app */,
 				49B631F728AFCB2A00E14DFE /* Kiwi.app */,
+				493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +178,8 @@
 		49B6320D28AFD51B00E14DFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				494B39E528AFF25800E489E6 /* CloudKit.framework */,
+				494B39E228AFF23F00E489E6 /* CloudKit.framework */,
 				49B6320E28AFD51B00E14DFE /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -105,6 +188,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		493BC5C728AFF0D90059E434 /* Kiwi Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493BC5D928AFF0DA0059E434 /* Build configuration list for PBXNativeTarget "Kiwi Watch App" */;
+			buildPhases = (
+				493BC5C428AFF0D90059E434 /* Sources */,
+				493BC5C528AFF0D90059E434 /* Frameworks */,
+				493BC5C628AFF0D90059E434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kiwi Watch App";
+			productName = "Kiwi Watch App";
+			productReference = 493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		49B631F028AFCB2A00E14DFE /* Kiwi (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B6320628AFCB2A00E14DFE /* Build configuration list for PBXNativeTarget "Kiwi (iOS)" */;
@@ -112,10 +212,12 @@
 				49B631ED28AFCB2A00E14DFE /* Sources */,
 				49B631EE28AFCB2A00E14DFE /* Frameworks */,
 				49B631EF28AFCB2A00E14DFE /* Resources */,
+				493BC5D628AFF0DA0059E434 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				493BC5D428AFF0DA0059E434 /* PBXTargetDependency */,
 			);
 			name = "Kiwi (iOS)";
 			productName = "Kiwi (iOS)";
@@ -146,9 +248,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					493BC5C728AFF0D90059E434 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					49B631F028AFCB2A00E14DFE = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -172,11 +277,21 @@
 			targets = (
 				49B631F028AFCB2A00E14DFE /* Kiwi (iOS) */,
 				49B631F628AFCB2A00E14DFE /* Kiwi (macOS) */,
+				493BC5C728AFF0D90059E434 /* Kiwi Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		493BC5C628AFF0D90059E434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493BC5D228AFF0DA0059E434 /* Preview Assets.xcassets in Resources */,
+				493BC5CF28AFF0DA0059E434 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B631EF28AFCB2A00E14DFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +311,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		493BC5C428AFF0D90059E434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */,
+				494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */,
+				493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */,
+				493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */,
+				49E194B728B11F6C00EE949D /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B631ED28AFCB2A00E14DFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +331,7 @@
 				49B6320028AFCB2A00E14DFE /* Persistence.swift in Sources */,
 				49B631FC28AFCB2A00E14DFE /* KiwiApp.swift in Sources */,
 				49B631FE28AFCB2A00E14DFE /* ContentView.swift in Sources */,
+				49E194B428B11F4700EE949D /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +343,88 @@
 				49B6320128AFCB2A00E14DFE /* Persistence.swift in Sources */,
 				49B631FD28AFCB2A00E14DFE /* KiwiApp.swift in Sources */,
 				49B631FF28AFCB2A00E14DFE /* ContentView.swift in Sources */,
+				49E194B528B11F4700EE949D /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		493BC5D428AFF0DA0059E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493BC5C728AFF0D90059E434 /* Kiwi Watch App */;
+			targetProxy = 493BC5D328AFF0DA0059E434 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		493BC5D728AFF0DA0059E434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Kiwi Watch App/Kiwi Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kiwi Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = QQS593TJVN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kiwi-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kiwi;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.laporatory.Kiwi;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laporatory.Kiwi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Debug;
+		};
+		493BC5D828AFF0DA0059E434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Kiwi Watch App/Kiwi Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kiwi Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = QQS593TJVN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kiwi-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kiwi;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.laporatory.Kiwi;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laporatory.Kiwi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Release;
+		};
 		49B6320428AFCB2A00E14DFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -333,6 +537,7 @@
 		49B6320728AFCB2A00E14DFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Kiwi (iOS).entitlements";
@@ -365,6 +570,7 @@
 		49B6320828AFCB2A00E14DFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Kiwi (iOS).entitlements";
@@ -454,6 +660,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		493BC5D928AFF0DA0059E434 /* Build configuration list for PBXNativeTarget "Kiwi Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493BC5D728AFF0DA0059E434 /* Debug */,
+				493BC5D828AFF0DA0059E434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49B631E528AFCB2700E14DFE /* Build configuration list for PBXProject "Kiwi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
