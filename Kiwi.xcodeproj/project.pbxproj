@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492F4E5828B7CD3C00849C72 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */; };
+		492F4E5B28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
+		492F4E5C28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
+		492F4E5D28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
+		492F4E5E28B7D1B400849C72 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */; };
 		493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CA28AFF0D90059E434 /* KiwiApp.swift */; };
 		493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CC28AFF0D90059E434 /* ContentView.swift */; };
 		493BC5CF28AFF0DA0059E434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493BC5CE28AFF0DA0059E434 /* Assets.xcassets */; };
@@ -16,6 +21,7 @@
 		494B39E328AFF23F00E489E6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494B39E228AFF23F00E489E6 /* CloudKit.framework */; };
 		494B39E628AFF25800E489E6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494B39E528AFF25800E489E6 /* CloudKit.framework */; };
 		494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
+		49666FCA28BBC788006ED849 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49666FC928BBC788006ED849 /* AddTransactionView.swift */; };
 		49B631FA28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FB28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FC28AFCB2A00E14DFE /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E928AFCB2700E14DFE /* KiwiApp.swift */; };
@@ -27,9 +33,18 @@
 		49B6320228AFCB2A00E14DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B631EC28AFCB2A00E14DFE /* Assets.xcassets */; };
 		49B6320328AFCB2A00E14DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B631EC28AFCB2A00E14DFE /* Assets.xcassets */; };
 		49B6320F28AFD51B00E14DFE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B6320E28AFD51B00E14DFE /* CloudKit.framework */; };
+		49C8161528CB8B4D00652335 /* PocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8161428CB8B4D00652335 /* PocketViewModel.swift */; };
+		49C8161628CB8B4D00652335 /* PocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8161428CB8B4D00652335 /* PocketViewModel.swift */; };
+		49C8161728CB8B4D00652335 /* PocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8161428CB8B4D00652335 /* PocketViewModel.swift */; };
 		49E194B428B11F4700EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B328B11F4700EE949D /* ContentViewModel.swift */; };
 		49E194B528B11F4700EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B328B11F4700EE949D /* ContentViewModel.swift */; };
-		49E194B728B11F6C00EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B628B11F6C00EE949D /* ContentViewModel.swift */; };
+		49E194BB28B132D700EE949D /* PocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194BA28B132D700EE949D /* PocketView.swift */; };
+		49E194BC28B132D700EE949D /* PocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194BA28B132D700EE949D /* PocketView.swift */; };
+		49E194C328B1440C00EE949D /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C228B1440C00EE949D /* Formatter.swift */; };
+		49E194C428B1440C00EE949D /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C228B1440C00EE949D /* Formatter.swift */; };
+		49E194C728B1457F00EE949D /* PocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C628B1457F00EE949D /* PocketView.swift */; };
+		49E194C928B145BE00EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B328B11F4700EE949D /* ContentViewModel.swift */; };
+		49E194CA28B1461600EE949D /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C228B1440C00EE949D /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
 		493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kiwi Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493BC5CA28AFF0D90059E434 /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
 		493BC5CC28AFF0D90059E434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +83,7 @@
 		494B39E428AFF25500E489E6 /* Kiwi Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kiwi Watch App.entitlements"; sourceTree = "<group>"; };
 		494B39E528AFF25800E489E6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kiwi-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		49666FC928BBC788006ED849 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		49B631E828AFCB2700E14DFE /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		49B631E928AFCB2700E14DFE /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
 		49B631EA28AFCB2700E14DFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,8 +95,11 @@
 		49B6320C28AFD50C00E14DFE /* Kiwi (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kiwi (iOS).entitlements"; sourceTree = "<group>"; };
 		49B6320E28AFD51B00E14DFE /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		49B6321028AFD56100E14DFE /* Kiwi--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kiwi--iOS--Info.plist"; sourceTree = "<group>"; };
+		49C8161428CB8B4D00652335 /* PocketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketViewModel.swift; sourceTree = "<group>"; };
 		49E194B328B11F4700EE949D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		49E194B628B11F6C00EE949D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		49E194BA28B132D700EE949D /* PocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketView.swift; sourceTree = "<group>"; };
+		49E194C228B1440C00EE949D /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		49E194C628B1457F00EE949D /* PocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,16 +130,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492F4E5928B7CD3F00849C72 /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */,
+				492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
 		493BC5C928AFF0D90059E434 /* Kiwi Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				49E194C828B1458700EE949D /* Core */,
 				494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */,
 				494B39E428AFF25500E489E6 /* Kiwi Watch App.entitlements */,
 				493BC5CA28AFF0D90059E434 /* KiwiApp.swift */,
-				493BC5CC28AFF0D90059E434 /* ContentView.swift */,
 				493BC5CE28AFF0DA0059E434 /* Assets.xcassets */,
 				493BC5D028AFF0DA0059E434 /* Preview Content */,
-				49E194B628B11F6C00EE949D /* ContentViewModel.swift */,
 			);
 			path = "Kiwi Watch App";
 			sourceTree = "<group>";
@@ -147,12 +176,12 @@
 		49B631E628AFCB2700E14DFE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				49E194C128B143A200EE949D /* Helper */,
+				49E194B828B1325200EE949D /* Core */,
 				49B631E928AFCB2700E14DFE /* KiwiApp.swift */,
-				49B631EA28AFCB2700E14DFE /* ContentView.swift */,
 				49B631EB28AFCB2700E14DFE /* Persistence.swift */,
 				49B631EC28AFCB2A00E14DFE /* Assets.xcassets */,
 				49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */,
-				49E194B328B11F4700EE949D /* ContentViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,6 +212,52 @@
 				49B6320E28AFD51B00E14DFE /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49E194B828B1325200EE949D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				492F4E5928B7CD3F00849C72 /* AddTransaction */,
+				49E194BD28B132DD00EE949D /* Pocket */,
+				49E194B928B1328B00EE949D /* Content */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		49E194B928B1328B00EE949D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				49B631EA28AFCB2700E14DFE /* ContentView.swift */,
+				49E194B328B11F4700EE949D /* ContentViewModel.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		49E194BD28B132DD00EE949D /* Pocket */ = {
+			isa = PBXGroup;
+			children = (
+				49C8161428CB8B4D00652335 /* PocketViewModel.swift */,
+				49E194BA28B132D700EE949D /* PocketView.swift */,
+			);
+			path = Pocket;
+			sourceTree = "<group>";
+		};
+		49E194C128B143A200EE949D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				49E194C228B1440C00EE949D /* Formatter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		49E194C828B1458700EE949D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				49666FC928BBC788006ED849 /* AddTransactionView.swift */,
+				49E194C628B1457F00EE949D /* PocketView.swift */,
+				493BC5CC28AFF0D90059E434 /* ContentView.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +324,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					493BC5C728AFF0D90059E434 = {
 						CreatedOnToolsVersion = 14.0;
@@ -315,11 +390,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E194C928B145BE00EE949D /* ContentViewModel.swift in Sources */,
 				494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */,
+				49C8161728CB8B4D00652335 /* PocketViewModel.swift in Sources */,
 				494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */,
+				492F4E5D28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */,
 				493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */,
 				493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */,
-				49E194B728B11F6C00EE949D /* ContentViewModel.swift in Sources */,
+				49E194CA28B1461600EE949D /* Formatter.swift in Sources */,
+				49E194C728B1457F00EE949D /* PocketView.swift in Sources */,
+				49666FCA28BBC788006ED849 /* AddTransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,11 +407,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492F4E5828B7CD3C00849C72 /* AddTransactionView.swift in Sources */,
 				49B631FA28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */,
+				49C8161528CB8B4D00652335 /* PocketViewModel.swift in Sources */,
 				49B6320028AFCB2A00E14DFE /* Persistence.swift in Sources */,
+				492F4E5B28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */,
 				49B631FC28AFCB2A00E14DFE /* KiwiApp.swift in Sources */,
 				49B631FE28AFCB2A00E14DFE /* ContentView.swift in Sources */,
 				49E194B428B11F4700EE949D /* ContentViewModel.swift in Sources */,
+				49E194C328B1440C00EE949D /* Formatter.swift in Sources */,
+				49E194BB28B132D700EE949D /* PocketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +426,14 @@
 			files = (
 				49B631FB28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */,
 				49B6320128AFCB2A00E14DFE /* Persistence.swift in Sources */,
+				49C8161628CB8B4D00652335 /* PocketViewModel.swift in Sources */,
 				49B631FD28AFCB2A00E14DFE /* KiwiApp.swift in Sources */,
 				49B631FF28AFCB2A00E14DFE /* ContentView.swift in Sources */,
+				492F4E5C28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */,
 				49E194B528B11F4700EE949D /* ContentViewModel.swift in Sources */,
+				49E194C428B1440C00EE949D /* Formatter.swift in Sources */,
+				49E194BC28B132D700EE949D /* PocketView.swift in Sources */,
+				492F4E5E28B7D1B400849C72 /* AddTransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +548,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -475,11 +566,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
 			};
 			name = Debug;
 		};
@@ -516,6 +610,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -527,10 +622,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
 			};
 			name = Release;
 		};
@@ -607,9 +705,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = QQS593TJVN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -635,9 +736,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = QQS593TJVN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
