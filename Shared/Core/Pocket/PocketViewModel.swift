@@ -13,6 +13,7 @@ class PocketViewModel: ObservableObject {
     @Published var transactions: [TransactionEntity] = []
     @Published var categories: [CategoryEntity] = []
     @Published var budgetLeft: Float = 5000.00
+    
     // TODO: Retreieve budget from Core Data + CloudKit
     let budget: Float = 5000.00
     
