@@ -14,8 +14,11 @@ class ContentViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init() {
+        // Init logic not working on WatchOS. Only allow initialization on iOS first
+#if os(iOS)
         initForNewUser()
-        
+#endif
+
         // Retrieve setting instance from Core Data + CloudKit
         fetchSetting()
 
@@ -27,7 +30,7 @@ class ContentViewModel: ObservableObject {
     }
     
     private func initForNewUser() {
-        // Another logic to check if it is a new user
+        // Logic to check if it is a new user
         if #available(watchOS 9.0, *) {
             // Continue initialization only if iCloud user haven't open the app yet
             guard (NSUbiquitousKeyValueStore().object(forKey: "isFirstLaunch") == nil) else { return }
@@ -41,7 +44,7 @@ class ContentViewModel: ObservableObject {
             NSUbiquitousKeyValueStore().synchronize()
         } else {
             // Fallback on earlier versions
-            print("MYDEBUG: Platform not support NSUbiquitousKeyValueStore")
+            print("DEBUGLOG: Platform not support NSUbiquitousKeyValueStore")
         }
     }
     
