@@ -40,8 +40,11 @@ struct TransactionItem: View {
     }
 }
 //
-//struct TransactionItem_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TransactionItem()
-//    }
-//}
+struct TransactionItem_Previews: PreviewProvider {
+    static var previews: some View {
+        let previewHelper = PreviewHelper()
+        let transactions = previewHelper.fetchTransactions()
+        
+        TransactionItem(transaction: transactions.first!)
+    }
+}

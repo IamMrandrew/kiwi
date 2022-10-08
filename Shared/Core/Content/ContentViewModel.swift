@@ -10,10 +10,12 @@ import Combine
 
 class ContentViewModel: ObservableObject {
     private var setting: SettingEntity? = nil
-    private let viewContext = PersistenceController.shared.container.viewContext
+    private let viewContext:NSManagedObjectContext
     private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
+        self.viewContext = viewContext
+        
         // Init logic not working on WatchOS. Only allow initialization on iOS first
 #if os(iOS)
         initForNewUser()

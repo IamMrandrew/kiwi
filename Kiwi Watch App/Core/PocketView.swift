@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct PocketView: View {
-    @StateObject var vm = PocketViewModel()
+    @StateObject var vm: PocketViewModel
     @State private var isAddTransactionSheetOpen = false
+    
+    init(vm: PocketViewModel = .init()) {
+        _vm = StateObject(wrappedValue: vm)
+    }
     
     var body: some View {
         NavigationView {
@@ -50,7 +54,8 @@ struct PocketView: View {
 
 struct TransactionsView_Previews: PreviewProvider {
     static var previews: some View {
-        PocketView()
-            .environmentObject(AddTransactionViewModel())
+        let previewContext = PersistenceController.preview.container.viewContext
+        let previewVM = PocketViewModel(viewContext: previewContext)
+        PocketView(vm: previewVM)
     }
 }

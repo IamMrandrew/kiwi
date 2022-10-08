@@ -17,10 +17,12 @@ class PocketViewModel: ObservableObject {
     // TODO: Retreieve budget from Core Data + CloudKit
     let budget: Float = 5000.00
     
-    private let viewContext = PersistenceController.shared.container.viewContext
+    private let viewContext: NSManagedObjectContext
     private var cancellables = Set<AnyCancellable>()
 
-    init() {
+    init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
+        self.viewContext = viewContext
+        
         fetchTransactions()
         fetchCategories()
         

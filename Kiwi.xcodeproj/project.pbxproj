@@ -12,6 +12,9 @@
 		492F4E5C28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
 		492F4E5D28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
 		492F4E5E28B7D1B400849C72 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */; };
+		493A48D028F1D825005E7CAE /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48CF28F1D825005E7CAE /* PreviewHelper.swift */; };
+		493A48D128F1D825005E7CAE /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48CF28F1D825005E7CAE /* PreviewHelper.swift */; };
+		493A48D228F1D825005E7CAE /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48CF28F1D825005E7CAE /* PreviewHelper.swift */; };
 		493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CA28AFF0D90059E434 /* KiwiApp.swift */; };
 		493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CC28AFF0D90059E434 /* ContentView.swift */; };
 		493BC5CF28AFF0DA0059E434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493BC5CE28AFF0DA0059E434 /* Assets.xcassets */; };
@@ -77,6 +80,7 @@
 /* Begin PBXFileReference section */
 		492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
+		493A48CF28F1D825005E7CAE /* PreviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewHelper.swift; sourceTree = "<group>"; };
 		493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kiwi Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493BC5CA28AFF0D90059E434 /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
 		493BC5CC28AFF0D90059E434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				49B631EB28AFCB2700E14DFE /* Persistence.swift */,
 				49B631EC28AFCB2A00E14DFE /* Assets.xcassets */,
 				49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */,
+				493A48CF28F1D825005E7CAE /* PreviewHelper.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493A48D228F1D825005E7CAE /* PreviewHelper.swift in Sources */,
 				49FB835928D2317C00911895 /* TransactionItem.swift in Sources */,
 				49E194C928B145BE00EE949D /* ContentViewModel.swift in Sources */,
 				494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */,
@@ -431,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493A48D028F1D825005E7CAE /* PreviewHelper.swift in Sources */,
 				49831D9728CC4126000E9DAF /* TransactionItem.swift in Sources */,
 				492F4E5828B7CD3C00849C72 /* AddTransactionView.swift in Sources */,
 				49B631FA28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */,
@@ -449,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493A48D128F1D825005E7CAE /* PreviewHelper.swift in Sources */,
 				49831D9828CC4126000E9DAF /* TransactionItem.swift in Sources */,
 				49B631FB28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */,
 				49B6320128AFCB2A00E14DFE /* Persistence.swift in Sources */,

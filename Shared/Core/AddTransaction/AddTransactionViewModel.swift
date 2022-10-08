@@ -14,10 +14,12 @@ class AddTransactionViewModel: ObservableObject {
     @Published var pickedCategory: CategoryEntity = CategoryEntity()
     @Published var categories: [CategoryEntity] = []
     
-    private let viewContext = PersistenceController.shared.container.viewContext
+    private let viewContext: NSManagedObjectContext
     private var cancellables = Set<AnyCancellable>()
 
-    init() {
+    init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
+        self.viewContext = viewContext
+        
         fetchCategories()
     }
     

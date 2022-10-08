@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct AddTransactionView: View {
-    @StateObject var vm = AddTransactionViewModel()
+    @StateObject var vm: AddTransactionViewModel
     @Environment(\.presentationMode) var presentationMode
+    
+    init(vm: AddTransactionViewModel = .init()) {
+        _vm = StateObject(wrappedValue: vm)
+    }
     
     var body: some View {
         NavigationView {
@@ -41,7 +45,8 @@ struct AddTransactionView: View {
 
 struct AddTransactionView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTransactionView()
-            .environmentObject(AddTransactionViewModel())
+        let previewContext = PersistenceController.preview.container.viewContext
+        let previewVM = AddTransactionViewModel(viewContext: previewContext)
+        AddTransactionView(vm: previewVM)
     }
 }

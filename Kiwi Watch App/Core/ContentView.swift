@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var vm = ContentViewModel()
+    @StateObject var vm: ContentViewModel
+    
+    init(vm: ContentViewModel = .init()) {
+        _vm = StateObject(wrappedValue: vm)
+    }
     
     var body: some View {
         PocketView()
@@ -24,6 +28,8 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let previewContext = PersistenceController.preview.container.viewContext
+        let previewVM = ContentViewModel(viewContext: previewContext)
+        ContentView(vm: previewVM)
     }
 }

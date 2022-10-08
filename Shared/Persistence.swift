@@ -11,6 +11,18 @@ import CloudKit
 
 class PersistenceController {
     static let shared = PersistenceController() // Singleton class
+    
+    // For preview purpose
+    static var preview: PersistenceController = {
+        let result = PersistenceController(inMemory: true)
+        let viewContext = result.container.viewContext
+        
+        // Init items for preview
+        let previewHelper = PreviewHelper(viewContext: viewContext)
+        previewHelper.initForNewUser()
+        
+        return result
+    }()
 
     let container: NSPersistentCloudKitContainer
     
