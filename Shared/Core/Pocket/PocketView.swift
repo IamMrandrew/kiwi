@@ -29,7 +29,7 @@ struct PocketView: View {
                         .frame(height: 40)
                     
                     VStack {
-                        Text(formatIntoCurrency(vm.budgetLeft))
+                        Text(formatIntoCurrency(vm.budget.left))
                             .font(.system(size: 48, weight: .semibold))
                         
                         Spacer()
@@ -37,13 +37,13 @@ struct PocketView: View {
                         
                         // Workaround only, before budget model is implemented
                         HStack() {
-                            Text("-\(formatIntoCurrency(vm.budget - vm.budgetLeft))")
+                            Text("-\(formatIntoCurrency(vm.budget.total - vm.budget.left))")
                                 .font(.system(size: 17, weight: .medium))
                                 .foregroundColor(.gray)
                             
                             Spacer()
                             
-                            Text("+\(formatIntoCurrency(vm.budget - vm.budget))")
+                            Text("+\(formatIntoCurrency(vm.budget.total - vm.budget.total))")
                                 .font(.system(size: 17, weight: .medium))
                                 .foregroundColor(.green)
                         }
@@ -70,7 +70,12 @@ struct PocketView: View {
                         TransactionItem(transaction: transaction)
                             .listRowSeparator(.hidden)
                     }
-                    .onDelete(perform: vm.deleteTransaction)
+                    .onDelete { offsets in
+                        vm.deleteTransaction(
+                            sectionEntries: vm.transactions,
+                            offsets: offsets
+                        )
+                    }
                 }
                 .listStyle(PlainListStyle())
                 .toolbar {

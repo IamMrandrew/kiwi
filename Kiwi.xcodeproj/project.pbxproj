@@ -12,9 +12,14 @@
 		492F4E5C28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
 		492F4E5D28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */; };
 		492F4E5E28B7D1B400849C72 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */; };
+		493240FC28FAE8B70080139C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493240FB28FAE8B70080139C /* View.swift */; };
+		493240FD28FAE8B70080139C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493240FB28FAE8B70080139C /* View.swift */; };
+		493240FE28FAE8B70080139C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493240FB28FAE8B70080139C /* View.swift */; };
 		493A48D028F1D825005E7CAE /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48CF28F1D825005E7CAE /* PreviewHelper.swift */; };
 		493A48D128F1D825005E7CAE /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48CF28F1D825005E7CAE /* PreviewHelper.swift */; };
 		493A48D228F1D825005E7CAE /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48CF28F1D825005E7CAE /* PreviewHelper.swift */; };
+		493A48DB28F1E11C005E7CAE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48D828F1E11C005E7CAE /* Color.swift */; };
+		493A48DD28F1E1BA005E7CAE /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A48DC28F1E1BA005E7CAE /* Typography.swift */; };
 		493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CA28AFF0D90059E434 /* KiwiApp.swift */; };
 		493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BC5CC28AFF0D90059E434 /* ContentView.swift */; };
 		493BC5CF28AFF0DA0059E434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493BC5CE28AFF0DA0059E434 /* Assets.xcassets */; };
@@ -27,6 +32,12 @@
 		49666FCA28BBC788006ED849 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49666FC928BBC788006ED849 /* AddTransactionView.swift */; };
 		49831D9728CC4126000E9DAF /* TransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831D9628CC4126000E9DAF /* TransactionItem.swift */; };
 		49831D9828CC4126000E9DAF /* TransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831D9628CC4126000E9DAF /* TransactionItem.swift */; };
+		4984211628FF04E4000B2B6F /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984211528FF04E4000B2B6F /* ActionButton.swift */; };
+		4984211828FF0633000B2B6F /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984211728FF0633000B2B6F /* NavigationItem.swift */; };
+		49A4856128F4717800DCB09C /* BalanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4856028F4717800DCB09C /* BalanceCard.swift */; };
+		49ADC55E28F716E2007860A2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADC55D28F716E2007860A2 /* DateHelper.swift */; };
+		49ADC55F28F716E2007860A2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADC55D28F716E2007860A2 /* DateHelper.swift */; };
+		49ADC56028F716E2007860A2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADC55D28F716E2007860A2 /* DateHelper.swift */; };
 		49B631FA28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FB28AFCB2A00E14DFE /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
 		49B631FC28AFCB2A00E14DFE /* KiwiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E928AFCB2700E14DFE /* KiwiApp.swift */; };
@@ -80,7 +91,10 @@
 /* Begin PBXFileReference section */
 		492F4E5728B7CD3C00849C72 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		492F4E5A28B7D1A700849C72 /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
+		493240FB28FAE8B70080139C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		493A48CF28F1D825005E7CAE /* PreviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewHelper.swift; sourceTree = "<group>"; };
+		493A48D828F1E11C005E7CAE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		493A48DC28F1E1BA005E7CAE /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		493BC5C828AFF0D90059E434 /* Kiwi Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kiwi Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493BC5CA28AFF0D90059E434 /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
 		493BC5CC28AFF0D90059E434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +106,10 @@
 		494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kiwi-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49666FC928BBC788006ED849 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		49831D9628CC4126000E9DAF /* TransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItem.swift; sourceTree = "<group>"; };
+		4984211528FF04E4000B2B6F /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		4984211728FF0633000B2B6F /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		49A4856028F4717800DCB09C /* BalanceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCard.swift; sourceTree = "<group>"; };
+		49ADC55D28F716E2007860A2 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		49B631E828AFCB2700E14DFE /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		49B631E928AFCB2700E14DFE /* KiwiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiApp.swift; sourceTree = "<group>"; };
 		49B631EA28AFCB2700E14DFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,9 +166,27 @@
 			path = AddTransaction;
 			sourceTree = "<group>";
 		};
+		493240FA28FAE7F10080139C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				493240FB28FAE8B70080139C /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		493A48D328F1E0EA005E7CAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				493A48D828F1E11C005E7CAE /* Color.swift */,
+				493A48DC28F1E1BA005E7CAE /* Typography.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		493BC5C928AFF0D90059E434 /* Kiwi Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				493A48D328F1E0EA005E7CAE /* Extensions */,
 				49FB835728D2317000911895 /* Components */,
 				49E194C828B1458700EE949D /* Core */,
 				494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */,
@@ -194,8 +230,9 @@
 		49B631E628AFCB2700E14DFE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				493240FA28FAE7F10080139C /* Extensions */,
 				49831D9028CC3EFF000E9DAF /* Components */,
-				49E194C128B143A200EE949D /* Helper */,
+				49E194C128B143A200EE949D /* Helpers */,
 				49E194B828B1325200EE949D /* Core */,
 				49B631E928AFCB2700E14DFE /* KiwiApp.swift */,
 				49B631EB28AFCB2700E14DFE /* Persistence.swift */,
@@ -262,12 +299,13 @@
 			path = Pocket;
 			sourceTree = "<group>";
 		};
-		49E194C128B143A200EE949D /* Helper */ = {
+		49E194C128B143A200EE949D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				49E194C228B1440C00EE949D /* Formatter.swift */,
+				49ADC55D28F716E2007860A2 /* DateHelper.swift */,
 			);
-			path = Helper;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		49E194C828B1458700EE949D /* Core */ = {
@@ -284,6 +322,9 @@
 			isa = PBXGroup;
 			children = (
 				49FB835828D2317C00911895 /* TransactionItem.swift */,
+				49A4856028F4717800DCB09C /* BalanceCard.swift */,
+				4984211528FF04E4000B2B6F /* ActionButton.swift */,
+				4984211728FF0633000B2B6F /* NavigationItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -418,18 +459,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493A48DD28F1E1BA005E7CAE /* Typography.swift in Sources */,
 				493A48D228F1D825005E7CAE /* PreviewHelper.swift in Sources */,
 				49FB835928D2317C00911895 /* TransactionItem.swift in Sources */,
+				49A4856128F4717800DCB09C /* BalanceCard.swift in Sources */,
+				493240FE28FAE8B70080139C /* View.swift in Sources */,
+				4984211628FF04E4000B2B6F /* ActionButton.swift in Sources */,
 				49E194C928B145BE00EE949D /* ContentViewModel.swift in Sources */,
 				494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */,
+				493A48DB28F1E11C005E7CAE /* Color.swift in Sources */,
 				49C8161728CB8B4D00652335 /* PocketViewModel.swift in Sources */,
 				494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */,
+				49ADC56028F716E2007860A2 /* DateHelper.swift in Sources */,
 				492F4E5D28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */,
 				493BC5CD28AFF0D90059E434 /* ContentView.swift in Sources */,
 				493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */,
 				49E194CA28B1461600EE949D /* Formatter.swift in Sources */,
 				49E194C728B1457F00EE949D /* PocketView.swift in Sources */,
 				49666FCA28BBC788006ED849 /* AddTransactionView.swift in Sources */,
+				4984211828FF0633000B2B6F /* NavigationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,9 +493,11 @@
 				49B6320028AFCB2A00E14DFE /* Persistence.swift in Sources */,
 				492F4E5B28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */,
 				49B631FC28AFCB2A00E14DFE /* KiwiApp.swift in Sources */,
+				49ADC55E28F716E2007860A2 /* DateHelper.swift in Sources */,
 				49B631FE28AFCB2A00E14DFE /* ContentView.swift in Sources */,
 				49E194B428B11F4700EE949D /* ContentViewModel.swift in Sources */,
 				49E194C328B1440C00EE949D /* Formatter.swift in Sources */,
+				493240FC28FAE8B70080139C /* View.swift in Sources */,
 				49E194BB28B132D700EE949D /* PocketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,9 +514,11 @@
 				49B631FD28AFCB2A00E14DFE /* KiwiApp.swift in Sources */,
 				49B631FF28AFCB2A00E14DFE /* ContentView.swift in Sources */,
 				492F4E5C28B7D1A700849C72 /* AddTransactionViewModel.swift in Sources */,
+				49ADC55F28F716E2007860A2 /* DateHelper.swift in Sources */,
 				49E194B528B11F4700EE949D /* ContentViewModel.swift in Sources */,
 				49E194C428B1440C00EE949D /* Formatter.swift in Sources */,
 				49E194BC28B132D700EE949D /* PocketView.swift in Sources */,
+				493240FD28FAE8B70080139C /* View.swift in Sources */,
 				492F4E5E28B7D1B400849C72 /* AddTransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

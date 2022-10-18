@@ -13,33 +13,29 @@ struct TransactionItem: View {
     var body: some View {
         VStack {
             HStack {
-                Text("🥘")
-                
-                Spacer()
-                    .frame(width: 30)
-                
                 VStack(alignment: .leading) {
                     Text("\(transaction.category?.name ?? "")")
+                        .font(.body)
                     
                     Spacer()
                         .frame(height: 4)
                     
-                    Text("\(transaction.entryTime!, formatter: transactionDateFormatter)")
+                    Text("$\(transaction.amount, specifier: "%.2f")")
                 }
                 
                 Spacer()
                 
-                Text("$\(transaction.amount, specifier: "%.2f")")
+                Text("🥘")
+                    .font(.system(size: 20))
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 14)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
             .frame(maxWidth: .infinity)
-//            .background(Color("Surface"))
-            .cornerRadius(8)
+            .foregroundColor(.neutral.onSurface)
         }
     }
 }
-//
+
 struct TransactionItem_Previews: PreviewProvider {
     static var previews: some View {
         let previewHelper = PreviewHelper()

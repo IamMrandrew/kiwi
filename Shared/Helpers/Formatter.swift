@@ -17,6 +17,8 @@ let transactionDateFormatter: DateFormatter = {
 func formatIntoCurrency(_ amount: Float) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
+    formatter.currencySymbol = formatter.currencySymbol.filter(\.isSymbol)
+    formatter.locale = Locale.current
     return formatter.string(from: amount as NSNumber) ?? ""
 }
 
