@@ -15,7 +15,7 @@ enum DisplayMode: String, CaseIterable, Identifiable {
 
 struct PocketView: View {
     @StateObject var vm = PocketViewModel()
-    @State private var isAddTransactionSheetOpen = false
+    @State private var isAddEntrySheetOpen = false
     
     // Workaround before implementing in vm
     @State private var displayMode: DisplayMode = .day
@@ -66,13 +66,13 @@ struct PocketView: View {
                     .frame(height: 30)
                 
                 List {
-                    ForEach(vm.transactions) { transaction in
-                        TransactionItem(transaction: transaction)
+                    ForEach(vm.entries) { entry in
+                        EntryItem(entry: entry)
                             .listRowSeparator(.hidden)
                     }
                     .onDelete { offsets in
-                        vm.deleteTransaction(
-                            sectionEntries: vm.transactions,
+                        vm.deleteEntry(
+                            sectionEntries: vm.entries,
                             offsets: offsets
                         )
                     }
@@ -81,16 +81,16 @@ struct PocketView: View {
                 .toolbar {
                     ToolbarItem {
                         Button {
-                            isAddTransactionSheetOpen.toggle()
+                            isAddEntrySheetOpen.toggle()
                         } label: {
                             Image(systemName: "plus")
                         }
                     }
                 }
-                .animation(.default, value: vm.transactions)
+                .animation(.default, value: vm.entries)
 //                .overlay(
 //                    Button {
-//                        isAddTransactionSheetOpen.toggle()
+//                        isAddEntrySheetOpen.toggle()
 //                    } label: {
 //                        Image(systemName: "chevron.up")
 //                            .padding()
@@ -99,13 +99,13 @@ struct PocketView: View {
 //                )
             }
         }
-        .sheet(isPresented: $isAddTransactionSheetOpen) {
-            AddTransactionView()
+        .sheet(isPresented: $isAddEntrySheetOpen) {
+            AddEntryView()
         }
     }
 }
 
-struct TransactionsView_Previews: PreviewProvider {
+struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
         PocketView()
     }

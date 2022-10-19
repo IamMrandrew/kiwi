@@ -7,7 +7,7 @@
 
 import Foundation
 
-let transactionDateFormatter: DateFormatter = {
+let entryDateFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
     formatter.timeStyle = .short

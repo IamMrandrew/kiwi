@@ -1,5 +1,5 @@
 //
-//  AddTransactionView.swift
+//  AddEntryView.swift
 //  Kiwi (iOS)
 //
 //  Created by Andrew Li on 25/8/2022.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct AddTransactionView: View {
-    @StateObject var vm = AddTransactionViewModel()
+struct AddEntryView: View {
+    @StateObject var vm = AddEntryViewModel()
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -31,7 +31,7 @@ struct AddTransactionView: View {
             .toolbar {
                 ToolbarItem {
                     Button {
-                        vm.addTransaction()
+                        vm.addEntry()
                         presentationMode.wrappedValue.dismiss()
                     } label: {
                         Text("Done")
@@ -42,8 +42,8 @@ struct AddTransactionView: View {
     }
 }
 
-struct AddTransactionView_Previews: PreviewProvider {
+struct AddEntryView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTransactionView()
+        AddEntryView()
     }
 }

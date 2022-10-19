@@ -1,5 +1,5 @@
 //
-//  TransactionItem.swift
+//  EntryItem.swift
 //  Kiwi
 //
 //  Created by Andrew Li on 10/9/2022.
@@ -7,29 +7,29 @@
 
 import SwiftUI
 
-struct TransactionItem: View {
-    var transaction: TransactionEntity
+struct EntryItem: View {
+    var entry: EntryEntity
     
     var body: some View {
         VStack {
             HStack {
-                Text("🥘")
+                Text("\(entry.category?.icon ?? "")")
                 
                 Spacer()
                     .frame(width: 30)
                 
                 VStack(alignment: .leading) {
-                    Text("\(transaction.category?.name ?? "")")
+                    Text("\(entry.category?.name ?? "")")
                     
                     Spacer()
                         .frame(height: 4)
                     
-                    Text("\(transaction.entryTime!, formatter: transactionDateFormatter)")
+                    Text("\(entry.entryTime!, formatter: entryDateFormatter)")
                 }
                 
                 Spacer()
                 
-                Text("$\(transaction.amount, specifier: "%.2f")")
+                Text("$\(entry.amount, specifier: "%.2f")")
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 14)
@@ -40,8 +40,8 @@ struct TransactionItem: View {
     }
 }
 
-//struct Transaction_Previews: PreviewProvider {
+//struct EntryItem_Previews: PreviewProvider {
 //    static var previews: some View {
-//        TransactionItem()
+//        EntryItem()
 //    }
 //}

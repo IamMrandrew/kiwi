@@ -20,20 +20,20 @@ class PreviewHelper {
         // Init setting
         _ = SettingEntity(context: viewContext)
         
-        // Init default categories and Dummpy transaction items
-        let defaultCategories = ["Food", "Transport", "Subscriptions", "Purchases", "Leisure", "Other"]
+        // Init default categories and Dummpy entry items
         var categoryEntities = [CategoryEntity]()
-        for category in defaultCategories {
+        for category in DefaultValues.categories {
             let newCategory = CategoryEntity(context: viewContext)
-            newCategory.name = category
+            newCategory.name = category.0
+            newCategory.icon = category.1
             categoryEntities.append(newCategory)
         }
         
         for i in 0..<5 {
-            let newTransaction = TransactionEntity(context: viewContext)
-            newTransaction.amount = 10.42 * Float(i + 1)
-            newTransaction.entryTime = Date()
-            newTransaction.category = categoryEntities.first
+            let newEntry = EntryEntity(context: viewContext)
+            newEntry.amount = 10.42 * Float(i + 1)
+            newEntry.entryTime = Date()
+            newEntry.category = categoryEntities[i]
         }
         
         do {
@@ -46,10 +46,10 @@ class PreviewHelper {
         }
     }
     
-    func fetchTransactions() -> [TransactionEntity] {
-        let transactionsRequest: NSFetchRequest<TransactionEntity> = TransactionEntity.fetchRequest()
-        let sort = NSSortDescriptor(keyPath: \TransactionEntity.entryTime, ascending: true)
-        transactionsRequest.sortDescriptors = [sort]
-        return try! viewContext.fetch(transactionsRequest)
+    func fetchEntries() -> [EntryEntity] {
+        let entriesRequest: NSFetchRequest<EntryEntity> = EntryEntity.fetchRequest()
+        let sort = NSSortDescriptor(keyPath: \EntryEntity.entryTime, ascending: true)
+        entriesRequest.sortDescriptors = [sort]
+        return try! viewContext.fetch(entriesRequest)
     }
 }

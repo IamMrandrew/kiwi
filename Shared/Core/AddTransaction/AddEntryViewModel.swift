@@ -1,5 +1,5 @@
 //
-//  AddTransactionViewModel.swift
+//  AddEntryViewModel.swift
 //  Kiwi
 //
 //  Created by Andrew Li on 25/8/2022.
@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import Combine
 
-class AddTransactionViewModel: ObservableObject {
+class AddEntryViewModel: ObservableObject {
     @Published var amount = "0"
     @Published var pickedCategory: CategoryEntity = CategoryEntity()
     @Published var categories: [CategoryEntity] = []
@@ -30,15 +30,15 @@ class AddTransactionViewModel: ObservableObject {
             categoriesRequest.sortDescriptors = [sort]
             categories = try viewContext.fetch(categoriesRequest)
         } catch {
-           NSLog("Handle fetchTransactions() error!")
+           NSLog("Handle fetchEntries() error!")
         }
     }
 
-    func addTransaction() {
-        let newTransaction = TransactionEntity(context: viewContext)
-        newTransaction.amount = Float(amount) ?? 0
-        newTransaction.entryTime = Date()
-        newTransaction.category = pickedCategory
+    func addEntry() {
+        let newEntry = EntryEntity(context: viewContext)
+        newEntry.amount = Float(amount) ?? 0
+        newEntry.entryTime = Date()
+        newEntry.category = pickedCategory
         
         do {
             try viewContext.save()

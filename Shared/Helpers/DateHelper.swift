@@ -33,11 +33,11 @@ class DateHelper {
     }
     
     // Boolean getters for filters
-    static func isItemTodayOnly(_ item: TransactionEntity) -> Bool {
+    static func isItemTodayOnly(_ item: EntryEntity) -> Bool {
         return item.entryTime! >= DateHelper.getStartOfToday() && item.entryTime! < DateHelper.getEndOfToday()
     }
     
-    static func isItemYesterdayOnly(_ item: TransactionEntity) -> Bool {
+    static func isItemYesterdayOnly(_ item: EntryEntity) -> Bool {
         return item.entryTime! >= DateHelper.getStartOfYesterday() && item.entryTime! < DateHelper.getStartOfToday()
     }
     

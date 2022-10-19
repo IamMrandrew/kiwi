@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ActionButton: View {
+    let label: String
     var buttonAction: () -> Void
+    
     var body: some View {
         Button {
             buttonAction()
         } label: {
-            Text("Add entry")
+            Text(label)
                 .font(.label.actionButton)
         }
         .frame(maxWidth: .infinity, alignment: .center)
@@ -22,6 +24,6 @@ struct ActionButton: View {
 
 struct ActionButton_Previews: PreviewProvider {
     static var previews: some View {
-        ActionButton(buttonAction: {})
+        ActionButton(label: "Add entry", buttonAction: {})
     }
 }

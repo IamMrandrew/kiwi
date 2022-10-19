@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PocketView: View {
     @StateObject var vm: PocketViewModel
-    @State private var isAddTransactionSheetOpen = false
+    @State private var isAddEntrySheetOpen = false
     
     init(vm: PocketViewModel = .init()) {
         _vm = StateObject(wrappedValue: vm)
@@ -21,19 +21,19 @@ struct PocketView: View {
                 DashboardView(
                     expenses: -vm.budget.expensesToday,
                     budgetLeft: vm.budget.left,
-                    openAddTransactionSheetAction: { isAddTransactionSheetOpen.toggle() }
+                    openAddEntrySheetAction: { isAddEntrySheetOpen.toggle() }
                 )
                 
                 PocketSectionView(
                     "Today",
-                    sectionEntries: vm.transactions.filter(DateHelper.isItemTodayOnly),
-                    deleteAction: vm.deleteTransaction
+                    sectionEntries: vm.entries.filter(DateHelper.isItemTodayOnly),
+                    deleteAction: vm.deleteEntry
                 )
                 
                 PocketSectionView(
                     "Yesterday",
-                    sectionEntries: vm.transactions.filter(DateHelper.isItemYesterdayOnly),
-                    deleteAction: vm.deleteTransaction
+                    sectionEntries: vm.entries.filter(DateHelper.isItemYesterdayOnly),
+                    deleteAction: vm.deleteEntry
                 )
                 
                 NavigationItem(
@@ -42,10 +42,10 @@ struct PocketView: View {
                     destination: Text("History")
                 )
             }
-            .animation(.default, value: vm.transactions)
+            .animation(.default, value: vm.entries)
         }
-        .sheet(isPresented: $isAddTransactionSheetOpen) {
-            AddTransactionView()
+        .sheet(isPresented: $isAddEntrySheetOpen) {
+            AddEntryView()
         }
     }
 }
@@ -53,28 +53,31 @@ struct PocketView: View {
 struct DashboardView: View {
     let expenses: Float
     let budgetLeft: Float
-    let openAddTransactionSheetAction: () -> Void
+    let openAddEntrySheetAction: () -> Void
     
     var body: some View {
         BalanceCard(
             expenses: expenses,
             budgetLeft: budgetLeft
         )
-            
-        ActionButton(buttonAction: openAddTransactionSheetAction)
-            .listItemTint(.accent.primary)
+        
+        ActionButton(
+            label: "Add entry",
+            buttonAction: openAddEntrySheetAction
+        )
+        .listItemTint(.accent.primary)
     }
 }
 
 struct PocketSectionView: View {
     let title: String
-    let sectionEntries: [TransactionEntity]
-    let deleteAction: ([TransactionEntity], IndexSet) -> Void
+    let sectionEntries: [EntryEntity]
+    let deleteAction: ([EntryEntity], IndexSet) -> Void
     
     init(
         _ title: String,
-        sectionEntries: [TransactionEntity],
-        deleteAction: @escaping ([TransactionEntity], IndexSet) -> Void
+        sectionEntries: [EntryEntity],
+        deleteAction: @escaping ([EntryEntity], IndexSet) -> Void
     ) {
         self.title = title
         self.sectionEntries = sectionEntries
@@ -84,8 +87,8 @@ struct PocketSectionView: View {
         
     var body: some View {
         Section(title) {
-            ForEach(sectionEntries) { transaction in
-                TransactionItem(transaction: transaction)
+            ForEach(sectionEntries) { entry in
+                EntryItem(entry: entry)
                     .listRowInsets(EdgeInsets())
             }
             .onDelete { offsets in

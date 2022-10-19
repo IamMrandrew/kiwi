@@ -22,19 +22,19 @@ struct Budget {
     var left: Float = 5000.00
     var expensesToday: Float = 0.00
     
-    mutating func updateBudgetByTransactions(_ transactions: [TransactionEntity]) {
-        let expenses = transactions.reduce(0) { sum, transaction in
-            sum + transaction.amount
+    mutating func updateBudgetByEntries(_ entries: [EntryEntity]) {
+        let expenses = entries.reduce(0) { sum, entries in
+            sum + entries.amount
         }
-        expensesToday  = transactions.filter(DateHelper.isItemTodayOnly).reduce(0) { sum, transaction in
-            sum + transaction.amount
+        expensesToday  = entries.filter(DateHelper.isItemTodayOnly).reduce(0) { sum, entries in
+            sum + entries.amount
         }
         left = total - expenses
     }
 }
 
 class PocketViewModel: ObservableObject {
-    @Published var transactions: [TransactionEntity] = []
+    @Published var entries: [EntryEntity] = []
     @Published var categories: [CategoryEntity] = []
     @Published var budget = Budget()
     
@@ -47,28 +47,28 @@ class PocketViewModel: ObservableObject {
     init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
         self.viewContext = viewContext
         
-        fetchTransactions()
+        fetchEntries()
         fetchCategories()
         
         PersistenceController.shared.$cloudEvent
             .sink{ newValue in
                 print("PersistenceController cloudEvent property changed")
-                self.fetchTransactions()
+                self.fetchEntries()
                 self.fetchCategories()
             }
             .store(in: &cancellables)
     }
     
-    func fetchTransactions() {
+    func fetchEntries() {
         do {
-            let transactionsRequest: NSFetchRequest<TransactionEntity> = TransactionEntity.fetchRequest()
-            let sort = NSSortDescriptor(keyPath: \TransactionEntity.entryTime, ascending: true)
-            transactionsRequest.sortDescriptors = [sort]
-            transactionsRequest.predicate = fetchMode != .all ? getDatePredicate(fetchMode: fetchMode) : nil
-            transactions = try viewContext.fetch(transactionsRequest)
-            budget.updateBudgetByTransactions(transactions)
+            let entriesRequest: NSFetchRequest<EntryEntity> = EntryEntity.fetchRequest()
+            let sort = NSSortDescriptor(keyPath: \EntryEntity.entryTime, ascending: true)
+            entriesRequest.sortDescriptors = [sort]
+            entriesRequest.predicate = fetchMode != .all ? getDatePredicate(fetchMode: fetchMode) : nil
+            entries = try viewContext.fetch(entriesRequest)
+            budget.updateBudgetByEntries(entries)
         } catch {
-            NSLog("Handle fetchTransactions() error!")
+            NSLog("Handle fetchEntries() error!")
         }
     }
     
@@ -79,17 +79,17 @@ class PocketViewModel: ObservableObject {
             categoriesRequest.sortDescriptors = [sort]
             categories = try viewContext.fetch(categoriesRequest)
         } catch {
-            NSLog("Handle fetchTransactions() error!")
+            NSLog("Handle fetchEntries() error!")
         }
     }
     
     
-    func deleteTransaction(sectionEntries: [TransactionEntity], offsets: IndexSet) {
+    func deleteEntry(sectionEntries: [EntryEntity], offsets: IndexSet) {
         offsets.map { sectionEntries[$0] }.forEach(viewContext.delete)
         
         do {
             try viewContext.save()
-            fetchTransactions()
+            fetchEntries()
         } catch {
             // Replace this implementation with code to handle the error appropriately.
             // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -119,7 +119,7 @@ extension PocketViewModel {
             }
         }()
         
-        // Retrieve transactions only from N days before to today
+        // Retrieve entries only from N days before to today
         let endOfToday = DateHelper.getEndOfToday()
         let startOfNDayBefore = DateHelper.getStartOfNDaysBefore(days: daysBefore)
         let fromPredicate = NSPredicate(format: "entryTime >= %@", startOfNDayBefore as NSDate)
