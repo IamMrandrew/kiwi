@@ -52,4 +52,11 @@ class PreviewHelper {
         entriesRequest.sortDescriptors = [sort]
         return try! viewContext.fetch(entriesRequest)
     }
+    
+    func fetchCategories() -> [CategoryEntity] {
+        let categoriesRequest: NSFetchRequest<CategoryEntity> = CategoryEntity.fetchRequest()
+        let sort = NSSortDescriptor(keyPath: \CategoryEntity.name, ascending: true)
+        categoriesRequest.sortDescriptors = [sort]
+        return try! viewContext.fetch(categoriesRequest)
+    }
 }

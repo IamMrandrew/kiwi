@@ -11,7 +11,7 @@ import Combine
 
 class AddEntryViewModel: ObservableObject {
     @Published var amount = "0"
-    @Published var pickedCategory: CategoryEntity = CategoryEntity()
+    @Published var pickedCategory: CategoryEntity? = nil
     @Published var categories: [CategoryEntity] = []
     
     private let viewContext: NSManagedObjectContext
@@ -34,6 +34,10 @@ class AddEntryViewModel: ObservableObject {
         }
     }
 
+    func pickCategory(category: CategoryEntity) {
+        pickedCategory = category
+    }
+    
     func addEntry() {
         let newEntry = EntryEntity(context: viewContext)
         newEntry.amount = Float(amount) ?? 0

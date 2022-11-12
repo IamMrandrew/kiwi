@@ -29,7 +29,7 @@
 		494B39E328AFF23F00E489E6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494B39E228AFF23F00E489E6 /* CloudKit.framework */; };
 		494B39E628AFF25800E489E6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494B39E528AFF25800E489E6 /* CloudKit.framework */; };
 		494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49B631E728AFCB2700E14DFE /* Kiwi.xcdatamodeld */; };
-		49666FCA28BBC788006ED849 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49666FC928BBC788006ED849 /* AddTransactionView.swift */; };
+		49666FCA28BBC788006ED849 /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49666FC928BBC788006ED849 /* AddEntryView.swift */; };
 		49831D9728CC4126000E9DAF /* EntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831D9628CC4126000E9DAF /* EntryItem.swift */; };
 		49831D9828CC4126000E9DAF /* EntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831D9628CC4126000E9DAF /* EntryItem.swift */; };
 		4984211628FF04E4000B2B6F /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984211528FF04E4000B2B6F /* ActionButton.swift */; };
@@ -67,6 +67,8 @@
 		49E194C728B1457F00EE949D /* PocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C628B1457F00EE949D /* PocketView.swift */; };
 		49E194C928B145BE00EE949D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194B328B11F4700EE949D /* ContentViewModel.swift */; };
 		49E194CA28B1461600EE949D /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C228B1440C00EE949D /* Formatter.swift */; };
+		49E22B16291C03ED0092A929 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E22B15291C03ED0092A929 /* CategorySelectionView.swift */; };
+		49E22B19291C07DF0092A929 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E22B18291C07DF0092A929 /* CategoryItem.swift */; };
 		49FB835928D2317C00911895 /* EntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB835828D2317C00911895 /* EntryItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,7 +112,7 @@
 		494B39E428AFF25500E489E6 /* Kiwi Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kiwi Watch App.entitlements"; sourceTree = "<group>"; };
 		494B39E528AFF25800E489E6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		494B39E728AFF26100E489E6 /* Kiwi-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kiwi-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
-		49666FC928BBC788006ED849 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		49666FC928BBC788006ED849 /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
 		49831D9628CC4126000E9DAF /* EntryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryItem.swift; sourceTree = "<group>"; };
 		4984211528FF04E4000B2B6F /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		4984211728FF0633000B2B6F /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
@@ -134,6 +136,8 @@
 		49E194BA28B132D700EE949D /* PocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketView.swift; sourceTree = "<group>"; };
 		49E194C228B1440C00EE949D /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		49E194C628B1457F00EE949D /* PocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketView.swift; sourceTree = "<group>"; };
+		49E22B15291C03ED0092A929 /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
+		49E22B18291C07DF0092A929 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		49FB835828D2317C00911895 /* EntryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,13 +169,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		492F4E5928B7CD3F00849C72 /* AddTransaction */ = {
+		492F4E5928B7CD3F00849C72 /* AddEntry */ = {
 			isa = PBXGroup;
 			children = (
 				492F4E5728B7CD3C00849C72 /* AddEntryView.swift */,
 				492F4E5A28B7D1A700849C72 /* AddEntryViewModel.swift */,
 			);
-			path = AddTransaction;
+			path = AddEntry;
 			sourceTree = "<group>";
 		};
 		493240FA28FAE7F10080139C /* Extensions */ = {
@@ -282,7 +286,7 @@
 		49E194B828B1325200EE949D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				492F4E5928B7CD3F00849C72 /* AddTransaction */,
+				492F4E5928B7CD3F00849C72 /* AddEntry */,
 				49E194BD28B132DD00EE949D /* Pocket */,
 				49E194B928B1328B00EE949D /* Content */,
 			);
@@ -321,11 +325,20 @@
 		49E194C828B1458700EE949D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				49666FC928BBC788006ED849 /* AddTransactionView.swift */,
+				49E22B17291C07980092A929 /* AddEntry */,
 				49E194C628B1457F00EE949D /* PocketView.swift */,
 				493BC5CC28AFF0D90059E434 /* ContentView.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		49E22B17291C07980092A929 /* AddEntry */ = {
+			isa = PBXGroup;
+			children = (
+				49666FC928BBC788006ED849 /* AddEntryView.swift */,
+				49E22B15291C03ED0092A929 /* CategorySelectionView.swift */,
+			);
+			path = AddEntry;
 			sourceTree = "<group>";
 		};
 		49FB835728D2317000911895 /* Components */ = {
@@ -335,6 +348,7 @@
 				49A4856028F4717800DCB09C /* BalanceCard.swift */,
 				4984211528FF04E4000B2B6F /* ActionButton.swift */,
 				4984211728FF0633000B2B6F /* NavigationItem.swift */,
+				49E22B18291C07DF0092A929 /* CategoryItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -478,6 +492,7 @@
 				4984211628FF04E4000B2B6F /* ActionButton.swift in Sources */,
 				49E194C928B145BE00EE949D /* ContentViewModel.swift in Sources */,
 				494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */,
+				49E22B19291C07DF0092A929 /* CategoryItem.swift in Sources */,
 				493A48DB28F1E11C005E7CAE /* Color.swift in Sources */,
 				49C8161728CB8B4D00652335 /* PocketViewModel.swift in Sources */,
 				494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */,
@@ -488,7 +503,8 @@
 				493BC5CB28AFF0D90059E434 /* KiwiApp.swift in Sources */,
 				49E194CA28B1461600EE949D /* Formatter.swift in Sources */,
 				49E194C728B1457F00EE949D /* PocketView.swift in Sources */,
-				49666FCA28BBC788006ED849 /* AddTransactionView.swift in Sources */,
+				49E22B16291C03ED0092A929 /* CategorySelectionView.swift in Sources */,
+				49666FCA28BBC788006ED849 /* AddEntryView.swift in Sources */,
 				4984211828FF0633000B2B6F /* NavigationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

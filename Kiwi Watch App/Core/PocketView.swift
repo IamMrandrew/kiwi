@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PocketView: View {
     @StateObject var vm: PocketViewModel
-    @State private var isAddEntrySheetOpen = false
     
     init(vm: PocketViewModel = .init()) {
         _vm = StateObject(wrappedValue: vm)
@@ -20,8 +19,7 @@ struct PocketView: View {
             List {
                 DashboardView(
                     expenses: -vm.budget.expensesToday,
-                    budgetLeft: vm.budget.left,
-                    openAddEntrySheetAction: { isAddEntrySheetOpen.toggle() }
+                    budgetLeft: vm.budget.left
                 )
                 
                 PocketSectionView(
@@ -44,16 +42,12 @@ struct PocketView: View {
             }
             .animation(.default, value: vm.entries)
         }
-        .sheet(isPresented: $isAddEntrySheetOpen) {
-            AddEntryView()
-        }
-    }
+   }
 }
 
 struct DashboardView: View {
     let expenses: Float
     let budgetLeft: Float
-    let openAddEntrySheetAction: () -> Void
     
     var body: some View {
         BalanceCard(
@@ -61,10 +55,12 @@ struct DashboardView: View {
             budgetLeft: budgetLeft
         )
         
-        ActionButton(
-            label: "Add entry",
-            buttonAction: openAddEntrySheetAction
-        )
+        NavigationLink(destination: AddEntryView()) {
+            ActionButton(
+                label: "Add entry",
+                buttonAction: {}
+            )
+        }
         .listItemTint(.accent.primary)
     }
 }
