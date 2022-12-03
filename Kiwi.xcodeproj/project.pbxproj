@@ -69,6 +69,7 @@
 		49E194CA28B1461600EE949D /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E194C228B1440C00EE949D /* Formatter.swift */; };
 		49E22B16291C03ED0092A929 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E22B15291C03ED0092A929 /* CategorySelectionView.swift */; };
 		49E22B19291C07DF0092A929 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E22B18291C07DF0092A929 /* CategoryItem.swift */; };
+		49E22B1B291FF6860092A929 /* InputDecimalPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E22B1A291FF6860092A929 /* InputDecimalPadView.swift */; };
 		49FB835928D2317C00911895 /* EntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB835828D2317C00911895 /* EntryItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +139,7 @@
 		49E194C628B1457F00EE949D /* PocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketView.swift; sourceTree = "<group>"; };
 		49E22B15291C03ED0092A929 /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
 		49E22B18291C07DF0092A929 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		49E22B1A291FF6860092A929 /* InputDecimalPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDecimalPadView.swift; sourceTree = "<group>"; };
 		49FB835828D2317C00911895 /* EntryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,6 +339,7 @@
 			children = (
 				49666FC928BBC788006ED849 /* AddEntryView.swift */,
 				49E22B15291C03ED0092A929 /* CategorySelectionView.swift */,
+				49E22B1A291FF6860092A929 /* InputDecimalPadView.swift */,
 			);
 			path = AddEntry;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				494B39E128AFF16F00E489E6 /* Persistence.swift in Sources */,
 				49E22B19291C07DF0092A929 /* CategoryItem.swift in Sources */,
 				493A48DB28F1E11C005E7CAE /* Color.swift in Sources */,
+				49E22B1B291FF6860092A929 /* InputDecimalPadView.swift in Sources */,
 				49C8161728CB8B4D00652335 /* PocketViewModel.swift in Sources */,
 				494B39E828AFF32700E489E6 /* Kiwi.xcdatamodeld in Sources */,
 				49ADC56028F716E2007860A2 /* DateHelper.swift in Sources */,

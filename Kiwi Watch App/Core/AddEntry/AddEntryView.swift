@@ -18,7 +18,9 @@ struct AddEntryView: View {
         VStack {
             CategorySelectionView(
                 categories: vm.categories,
-                pickCategory: vm.pickCategory
+                pickCategory: vm.pickCategory,
+                addEntry: vm.addEntry,
+                amount: $vm.amount
             )
             .navigationTitle("Category")
             .navigationBarTitleDisplayMode(.large)

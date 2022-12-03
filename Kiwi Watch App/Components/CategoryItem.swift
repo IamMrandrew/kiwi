@@ -10,10 +10,12 @@ import SwiftUI
 struct CategoryItem: View {
     let category: CategoryEntity
     let pickCategory: (CategoryEntity) -> Void
+    let action: () -> Void
     
     var body: some View {
         Button {
             pickCategory(category)
+            action()
         } label: {
             VStack(alignment: .leading) {
                 Text("\(category.icon ?? "")")
@@ -46,7 +48,8 @@ struct CategoryItem_Previews: PreviewProvider {
         
         CategoryItem(
             category: categories.first!,
-            pickCategory: { _ in }
+            pickCategory: { _ in },
+            action: {}
         )
     }
 }
