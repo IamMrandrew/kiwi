@@ -24,6 +24,7 @@ struct AddEntryView: View {
             )
             .navigationTitle("Category")
             .navigationBarTitleDisplayMode(.large)
+            .environmentObject(vm)
         }
     }
 }

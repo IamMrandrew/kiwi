@@ -8,42 +8,52 @@
 import SwiftUI
 
 struct CategorySelectionView: View {
-    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var vm: AddEntryViewModel
+    @Environment(\.dismiss) private var dismiss
+    
     let categories: [CategoryEntity]
     let pickCategory: (CategoryEntity) -> Void
     let addEntry: () -> Void
+    
     @Binding var amount: String
     
     @State private var isAddEntrySheetOpen = false
+    @State var isDoneAction = false
     
     var body: some View {
         List(categories) { category in
             CategoryItem(
                 category: category,
                 pickCategory: pickCategory,
-                action: presentInputController
+                action: toggleInputDecimalPad
             )
-//            TODO: Amount value decimal pad input
-//            .onTapGesture {
-//                isAddEntrySheetOpen.toggle()
-//            }
         }
         .listStyle(.carousel)
-        .sheet(isPresented: $isAddEntrySheetOpen) {
-            // TODO: Amount value decimal pad input
-            InputDecimalPadView()
+        .sheet(
+            isPresented: $isAddEntrySheetOpen,
+            onDismiss: { if isDoneAction { dismiss() } }
+        ) {
+            InputDecimalPadView(amount: $amount,
+                                addEntry: addEntry,
+                                isDoneAction: $isDoneAction
+            )
+            .environmentObject(vm)
         }
     }
     
-    private func presentInputController() {
-         presentInputController(withSuggestions: []) { result in
-             presentationMode.wrappedValue.dismiss()
-             // handle result from input controller
-             guard !result.isEmpty else { return }
-             amount = result
-             addEntry()
-         }
-     }
+    private func toggleInputDecimalPad() {
+        isAddEntrySheetOpen.toggle()
+    }
+    
+//    private func presentInputController() {
+//         presentInputController(withSuggestions: []) { result in
+//             presentationMode.wrappedValue.dismiss()
+//             // handle result from input controller
+//             guard !result.isEmpty else { return }
+//             amount = result
+//             addEntry()
+//         }
+//     }
 }
 
 extension View {
@@ -76,5 +86,6 @@ struct CategorySelectionView_Previews: PreviewProvider {
             addEntry: {},
             amount: .constant("0")
         )
+        .environmentObject(AddEntryViewModel())
     }
 }
