@@ -16,8 +16,10 @@ class InputDecimalPadViewModel: ObservableObject {
             amount += digit
         case ".":
             amount += digit
-        case "D":
-            amount.removeLast()
+        case "delete":
+            if !amount.isEmpty {
+                amount.removeLast()
+            }
         default:
             amount += digit
         }
